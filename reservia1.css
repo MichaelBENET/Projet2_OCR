@@ -65,6 +65,8 @@ figcaption {
     background-color: #FFFFFF;
     color: #000000;
     text-align: left;
+    font-size: 12px;
+    line-height: 100%;
 }
 .hp {
     display: flex;
@@ -101,7 +103,6 @@ figcaption {
 }
 #hmarseille figcaption {
     height: 40%;
-    line-height: 100%;
 }
 aside {
     width: 400px; /* espace que prend le bloc */
@@ -110,14 +111,24 @@ aside {
     padding: 20px; /* marge intérieure */
     width: 31%;
 }
+#titrepop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .populaires figure {
     border: thin #c0c0c0 solid;
     border-radius: 10px;
     display: flex;
     flex-flow: row;
     padding: 5px;
-    max-width: 220px;
+    height: 150px;
+    width: 260px;
     margin: auto;
+}
+.populaires img {
+    width: 40%;
+    height: 100%;   
 }
 .activités {
     display: grid;
