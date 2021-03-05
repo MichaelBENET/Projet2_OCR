@@ -1,8 +1,8 @@
 @font-face {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 body {
-	font-family: 'Raleway';
+    font-family: 'Raleway';
 }
 
 header {
@@ -35,45 +35,80 @@ nav a:hover {
     border-top: 3px solid #0065FC;
 }
 nav a:focus {
-	color: #760001;
+    color: #760001;
 }
 #bouton_filtres ul { 
-	list-style-type: none;
+    list-style-type: none;
     display: flex;
 }
 #bouton_filtres li {
-	border: thin #c0c0c0 solid;
+    border: thin #c0c0c0 solid;
 }
 #bouton_filtres a {
-	margin-right: 0px; 
-	text-decoration: none;
+    margin-right: 0px; 
+    text-decoration: none;
 }
+
 .icinfo {
 
 }
-.footer {
-	display: flex;
-}
-.footer ul {
-	list-style-type: none; 
-}
-.footer a {
-	text-decoration: none;
 
+
+
+img {
+    max-height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.hébergements figure {
+
+figcaption {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: left;
+}
+.hp {
+    display: flex;
+    flex-flow: row;
+}
+.hébergements {
+    display: flex;
+    flex-flow: column; /* blocs h2, hmarseille, h2 */
+    width: 65%;
+    background-color: #F2F2F2;
+    border-radius: 5px; /* arrondis */
+    padding: 20px; /* marge intérieure */
+    margin-right: 20px;
+}
+#hmarseille {
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+#hmarseille figure {
     border: thin #c0c0c0 solid;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 220px;
+    height: 200px;
+    width: 230px;
     margin: auto;
 }
-.hébergements {
-	display: flex;
-	flex-flow: row;
-	flex-wrap: wrap;
+#hmarseille img {
+    width: 100%;
+    height: 60%;   
+}
+#hmarseille figcaption {
+    height: 40%;
+    line-height: 100%;
+}
+aside {
+    width: 400px; /* espace que prend le bloc */
+    background-color: #F2F2F2;
+    border-radius: 5px; /* arrondis */
+    padding: 20px; /* marge intérieure */
+    width: 31%;
 }
 .populaires figure {
     border: thin #c0c0c0 solid;
@@ -83,6 +118,10 @@ nav a:focus {
     padding: 5px;
     max-width: 220px;
     margin: auto;
+}
+.activités {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 .amoda {
     border: thin #c0c0c0 solid;
@@ -102,28 +141,16 @@ nav a:focus {
     max-width: 220px;
     margin: auto;
 }
-.hp {
-	display: flex;
-	flex-flow: column;
-	display: grid;
-  	grid-template-columns: 2fr 1fr;
-}
-aside {
-    flex: 1.2; /* espace que prend le bloc */
-    background-color: #F2F2F2;
-    border-radius: 5px; /* arrondis */
-    padding: 20px; /* marge intérieure */
-}
-img {
-    max-width: 220px;
-    max-height: 150px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
 
-figcaption {
-    background-color: #FFFFFF;
-    color: #000000;
-    padding: 3px;
-    text-align: left;
+
+
+.footer {
+    display: flex;
+}
+.footer ul {
+    list-style-type: none; 
+}
+.footer a {
+    text-decoration: none;
+
 }
