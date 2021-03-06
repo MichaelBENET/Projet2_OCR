@@ -23,10 +23,17 @@
              <section class="recherche">
                  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 
-                        <input type="text" name="nom" id="nom" placeholder="Marseille, France" autofocus required />
-                        <input type="submit" name="recherche" value="Rechercher" />
-                    </p>
+                    <form id="barre_recherche">
+                        <div id="frm_rch">
+                            <div id="imap">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <input id="nom" type="text" placeholder="Marseille, France" autofocus required />
+                            <div id="btn_rch">
+                                <button class="bouton_recherche" type="button"> Rechercher </button>
+                            </div>
+                        </div>
+                    </form>
                     <div id="bouton_filtres">
                         <ul>
                             <li>Filtres</li>
@@ -99,8 +106,7 @@
                     </figure>
                     <figure class="pmod"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau"/> 
                         <figcaption>
-                            <h3>Au coeur de l'eau</h3>
-                            <h3>Chambres d'Hôtes</h3>
+                            <h3>Au coeur de l'eau Chambres d'Hôtes</h3>
                             <p>Nuit à partie de 71€</p>
                             <div id="ipcaption"><i class="fas fa-star"></i><i class="far fa-star"></i></div>
                         </figcaption>

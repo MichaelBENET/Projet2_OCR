@@ -37,6 +37,45 @@ nav a:hover {
 nav a:focus {
     color: #760001;
 }
+#frm_rch {
+    position: relative;
+    display: flex;
+    border-collapse: separate;
+}
+#imap {
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.bouton_recherche {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+    background-image: linear-gradient(to top right,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.bouton_recherche:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.bouton_recherche:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
 #bouton_filtres ul { 
     list-style-type: none;
     display: flex;
@@ -48,26 +87,17 @@ nav a:focus {
     margin-right: 0px; 
     text-decoration: none;
 }
+#bouton_filtres a:hover {
+    color: #0065FC;
+}
+#bouton_filtres a:focus {
+    color: #0065FC;
+}
 
 .icinfo {
 
 }
 
-
-
-img {
-    max-height: 150px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-figcaption {
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: left;
-    font-size: 12px;
-    line-height: 100%;
-}
 .hp {
     display: flex;
     flex-flow: row;
@@ -88,6 +118,7 @@ figcaption {
     flex-wrap: wrap;
 }
 #hmarseille figure {
+    background-color: #FFFFFF;
     border: thin #c0c0c0 solid;
     border-radius: 10px;
     display: flex;
@@ -96,13 +127,21 @@ figcaption {
     height: 200px;
     width: 230px;
     margin: auto;
+    margin-bottom: 20px;
 }
 #hmarseille img {
     width: 100%;
-    height: 60%;   
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
 }
 #hmarseille figcaption {
     height: 40%;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: left;
+    font-size: 12px;
+    line-height: 100%;
 }
 aside {
     width: 400px; /* espace que prend le bloc */
@@ -117,22 +156,42 @@ aside {
     justify-content: space-between;
 }
 .populaires figure {
+    background-color: #FFFFFF;
     border: thin #c0c0c0 solid;
     border-radius: 10px;
     display: flex;
     flex-flow: row;
     padding: 5px;
     height: 150px;
-    width: 260px;
+    width: 350px;
     margin: auto;
+    margin-bottom: 20px;
 }
 .populaires img {
     width: 40%;
-    height: 100%;   
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    margin-right: 20px;
+}
+.populaires figcaption {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: left;
+    font-size: 12px;
+    line-height: 100%;
+    margin-right: 40px;
 }
 .activités {
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+.activités figcaption {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: left;
+    font-size: 12px;
+    line-height: 100%;
 }
 .amoda {
     border: thin #c0c0c0 solid;
@@ -143,6 +202,12 @@ aside {
     max-width: 220px;
     margin: auto;
 }
+.amoda img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
 .amodb {
     border: thin #c0c0c0 solid;
     border-radius: 10px;
@@ -152,7 +217,12 @@ aside {
     max-width: 220px;
     margin: auto;
 }
-
+.amodb img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
 
 
 .footer {
