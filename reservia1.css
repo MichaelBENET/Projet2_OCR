@@ -43,16 +43,21 @@ nav a:focus {
     border-collapse: separate;
 }
 #imap {
+    text-align: center;
     background-color: #F2F2F2;
     padding: 10px;
+    width: 30px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+#frm_rch input {
+    font-size: 15px;
 }
 .bouton_recherche {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
-    font-size: 1rem;
+    font-size: 20px;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
@@ -82,6 +87,9 @@ nav a:focus {
 }
 #bouton_filtres li {
     border: thin #c0c0c0 solid;
+}
+#bouton_filtres i {
+    color: #0065FC;
 }
 #bouton_filtres a {
     margin-right: 0px; 
