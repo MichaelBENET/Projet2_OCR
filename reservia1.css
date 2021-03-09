@@ -73,7 +73,7 @@ nav a:focus {
 }
 
 .bouton_recherche:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: #DEEBFF;
 }
 
 .bouton_recherche:active {
@@ -84,31 +84,67 @@ nav a:focus {
 #bouton_filtres ul { 
     list-style-type: none;
     display: flex;
+    padding: 0;
 }
 #bouton_filtres li {
-    border: thin #c0c0c0 solid;
+        margin-right: 10px;
 }
-#bouton_filtres i {
-    color: #0065FC;
+#gras {
+    font-weight: bold;
+}
+
+   
+
+#bouton_filtres a {
+    z-index: 1;
+    border: #E6E6E6 solid 2px;
+    border-radius: 45px;
+    margin-right: 10px;
+    padding: 8px 15px 10px 0px;
 }
 #bouton_filtres a {
     margin-right: 0px; 
     text-decoration: none;
+    color: #000000;
+    font-weight: bold;
 }
 #bouton_filtres a:hover {
-    color: #0065FC;
+    color: #DEEBFF;
 }
 #bouton_filtres a:focus {
-    color: #0065FC;
+    color: #DEEBFF;
 }
+#bouton_filtres i {
 
+    z-index: 2;
+    text-align: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    background-position: center;
+    border: thick #DEEBFF solid;
+    border-radius: 40px;
+    width: 28px;
+    height: 27px;
+    padding-top: 5px;
+    padding-left: 1px;
+    margin-right: 10px;
+}
 .icinfo {
-
+    text-align: center;
+    color: #0065FC;
+    border: #E6E6E6 solid 2px;
+    border-radius: 45px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .hp {
     display: flex;
     flex-flow: row;
+}
+.hp a {
+    text-decoration: none;
 }
 .hébergements {
     display: flex;
