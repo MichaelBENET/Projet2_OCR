@@ -236,6 +236,7 @@ aside {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
 .activités figcaption {
     background-color: #FFFFFF;
     color: #000000;
@@ -243,12 +244,11 @@ aside {
     font-size: 12px;
     line-height: 100%;
 }
-.amoda {
+.amoda figure{
     border: thin #c0c0c0 solid;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
-    padding: 5px;
     max-width: 220px;
     margin: auto;
 }
