@@ -90,7 +90,9 @@ nav a:focus {
         margin-right: 10px;
 }
 #gras {
+    text-align: center;
     font-weight: bold;
+    margin-right: 10px;
 }
 
    
@@ -160,6 +162,7 @@ nav a:focus {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #hmarseille figure {
     background-color: #FFFFFF;
@@ -186,6 +189,9 @@ nav a:focus {
     text-align: left;
     font-size: 12px;
     line-height: 100%;
+}
+#afficher_plus {
+    cursor: pointer;
 }
 aside {
     width: 400px; /* espace que prend le bloc */
@@ -226,7 +232,7 @@ aside {
     line-height: 100%;
     margin-right: 40px;
 }
-.activités {
+#amarseille {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
