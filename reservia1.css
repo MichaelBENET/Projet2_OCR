@@ -47,8 +47,8 @@ nav a:focus {
     background-color: #F2F2F2;
     padding: 10px;
     width: 30px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 #frm_rch input {
     font-size: 15px;
@@ -61,8 +61,8 @@ nav a:focus {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: #0065FC;
     background-image: linear-gradient(to top right,
                                       rgba(0, 0, 0, .2),
@@ -87,7 +87,7 @@ nav a:focus {
     padding: 0;
 }
 #bouton_filtres li {
-        margin-right: 10px;
+    margin-right: 10px;
 }
 #gras {
     text-align: center;
@@ -124,8 +124,8 @@ nav a:focus {
     background-color: #DEEBFF;
     background-position: center;
     border: thick #DEEBFF solid;
-    border-radius: 40px;
-    width: 28px;
+    border-radius: 45px;
+    width: 28px; /* DUR DUR de centrer l'image sur le fond */
     height: 27px;
     padding-top: 5px;
     padding-left: 1px;
@@ -148,14 +148,21 @@ nav a:focus {
 .hp a {
     text-decoration: none;
 }
+.fas_p{
+    color: #0065FC;
+}
+.fas_v {
+    color: #dbdbdb;
+}
+
 .hébergements {
     display: flex;
     flex-flow: column; /* blocs h2, hmarseille, h2 */
     width: 65%;
     background-color: #F2F2F2;
-    border-radius: 5px; /* arrondis */
+    border-radius: 20px; /* arrondis */
     padding: 20px; /* marge intérieure */
-    margin-right: 20px;
+    margin-right: 40px;
 }
 #hmarseille {
 
@@ -166,21 +173,21 @@ nav a:focus {
 }
 #hmarseille figure {
     background-color: #FFFFFF;
-    border: thin #c0c0c0 solid;
-    border-radius: 10px;
+    box-shadow: 1px 1px 15px #E3E3E3;
+    border-radius: 20px;
     display: flex;
     flex-flow: column;
     padding: 5px;
     height: 200px;
     width: 230px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 #hmarseille img {
     width: 100%;
     height: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
 }
 #hmarseille figcaption {
     height: 40%;
@@ -196,19 +203,24 @@ nav a:focus {
 aside {
     width: 400px; /* espace que prend le bloc */
     background-color: #F2F2F2;
-    border-radius: 5px; /* arrondis */
+    border-radius: 20px; /* arrondis */
     padding: 20px; /* marge intérieure */
     width: 31%;
 }
+
 #titrepop {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+#icaption_b {
+    align-self: flex-end;
+}
+
 .populaires figure {
     background-color: #FFFFFF;
-    border: thin #c0c0c0 solid;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #E3E3E3;
     display: flex;
     flex-flow: row;
     padding: 5px;
@@ -220,8 +232,8 @@ aside {
 .populaires img {
     width: 40%;
     height: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
     margin-right: 20px;
 }
 .populaires figcaption {
@@ -234,49 +246,117 @@ aside {
 }
 #amarseille {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 60px;
+}
+#amarseille figure {
+    box-shadow: 1px 1px 15px #E3E3E3;
+}
+#amarseille a {
+    text-decoration: none;
 }
 
+.amoda {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 440px;
+    width: 300px;
+    overflow : hidden;
+    margin: auto;
+}
+.amoda img {
+    width: 700px;
+    height: 380px;
+    display: flex;
+    align-self: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+.apomègues {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 239px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 18px;
+}
+#apimg {
+    display: flex;
+    height: 180px;
+    width: 300px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.apomègues img {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-self: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.afrioul {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 180px;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+.afrioul img {
+    height: 120px;
+    width: 100%;   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.amodb_un {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 210px;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 18px;
+}
+.amodb_un img {
+    height: 150px;
+    width: 100%;    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+.amodb_deux {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 210px;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+.amodb_deux img {
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px; 
+}
 .activités figcaption {
     background-color: #FFFFFF;
     color: #000000;
+    padding: 8px;
     text-align: left;
     font-size: 12px;
     line-height: 100%;
 }
-.amoda figure{
-    border: thin #c0c0c0 solid;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: column;
-    max-width: 220px;
-    margin: auto;
-}
-.amoda img {
-    width: 100%;
-    height: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
-}
-.amodb {
-    border: thin #c0c0c0 solid;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
-    margin: auto;
-}
-.amodb img {
-    width: 100%;
-    height: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
-}
-
 
 .footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F2F2F2;
 }
 .footer ul {
     list-style-type: none; 
