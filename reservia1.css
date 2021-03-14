@@ -98,13 +98,10 @@ nav a:focus {
    
 
 #bouton_filtres a {
-    z-index: 1;
     border: #E6E6E6 solid 2px;
     border-radius: 45px;
     margin-right: 10px;
-    padding: 8px 15px 10px 0px;
-}
-#bouton_filtres a {
+    padding: 0px 15px 0px 0px;
     margin-right: 0px; 
     text-decoration: none;
     color: #000000;
@@ -118,17 +115,11 @@ nav a:focus {
 }
 #bouton_filtres i {
 
-    z-index: 2;
-    text-align: center;
     color: #0065FC;
     background-color: #DEEBFF;
-    background-position: center;
-    border: thick #DEEBFF solid;
     border-radius: 45px;
     width: 28px; /* DUR DUR de centrer l'image sur le fond */
-    height: 27px;
-    padding-top: 5px;
-    padding-left: 1px;
+    height: 28px;
     margin-right: 10px;
 }
 .icinfo {
@@ -247,6 +238,8 @@ aside {
 #amarseille {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+    grid-auto-rows: 440px; /* donne la hauteur des colonnes */
     margin-bottom: 60px;
 }
 #amarseille figure {
@@ -256,90 +249,81 @@ aside {
     text-decoration: none;
 }
 
-.amoda {
+.act_un_trois {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
     height: 440px;
-    width: 300px;
     overflow : hidden;
     margin: auto;
 }
-.amoda img {
-    width: 700px;
-    height: 380px;
+.act_un_trois img {
+    height: calc(100% - 60px);
+    width: 100%;
     display: flex;
     align-self: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
 }
-.apomègues {
+#colonne_deux {
+}
+.act_pomègues {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
-    height: 239px;
-    width: 300px;
+    height: 235px;
+    overflow : hidden;
     margin: auto;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
 }
-#apimg {
-    display: flex;
-    height: 180px;
-    width: 300px;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.apomègues img {
-    width: 300px;
-    height: 400px;
+.act_pomègues img {
+    height: calc(100% - 60px);
+    width: 100%;
     display: flex;
     align-self: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.afrioul {
+.act_frioul {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
-    height: 180px;
-    width: 300px;
+    height: 175px;
     overflow: hidden;
     margin: auto;
 }
-.afrioul img {
-    height: 120px;
+.act_frioul img {
+    height: calc(100% - 60px);
     width: 100%;   
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.amodb_un {
+.act_ndgarde {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
-    height: 210px;
-    width: 300px;
+    height: 175px;
     overflow: hidden;
     margin: auto;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
+
 }
-.amodb_un img {
-    height: 150px;
-    width: 100%;    
+.act_ndgarde img {
+    height: calc(100% - 60px);
+    width: 100%;   
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
 }
-.amodb_deux {
+.act_parc {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
-    height: 210px;
-    width: 300px;
+    height: 235px;
     overflow: hidden;
     margin: auto;
 }
-.amodb_deux img {
-    height: 150px;
+.act_parc img {
+    height: calc(100% - 60px);
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius:20px; 
@@ -347,7 +331,9 @@ aside {
 .activités figcaption {
     background-color: #FFFFFF;
     color: #000000;
+    height: 60px;
     padding: 8px;
+    box-sizing: border-box;
     text-align: left;
     font-size: 12px;
     line-height: 100%;
@@ -363,5 +349,7 @@ aside {
 }
 .footer a {
     text-decoration: none;
-
+}
+.footer li{
+    margin-bottom: 15px;
 }
