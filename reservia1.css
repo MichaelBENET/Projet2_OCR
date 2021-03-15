@@ -80,6 +80,7 @@ nav a:focus {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
 #bouton_filtres {
 }
 #bouton_filtres ul { 
@@ -122,7 +123,7 @@ nav a:focus {
     background-color: #DEEBFF;
     border-radius: 45px;
     height: 100%;
-    width: 38px;
+    width: 36px;
     margin-right: 10px;
 }
 .icinfo {
@@ -158,8 +159,22 @@ nav a:focus {
     padding: 20px; /* marge intérieure */
     margin-right: 40px;
 }
+.hp img {
+    object-fit: cover;    
+}
+.hébergements h3 {
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+.hébergements p {
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#icaption {
+    padding-left: 10px;
+}
 #hmarseille {
-
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -172,7 +187,7 @@ nav a:focus {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    height: 200px;
+    height: 190px;
     width: 230px;
     margin: auto;
     margin-bottom: 25px;
@@ -207,9 +222,7 @@ aside {
     align-items: center;
     justify-content: space-between;
 }
-#icaption_b {
-    align-self: flex-end;
-}
+
 
 .populaires figure {
     background-color: #FFFFFF;
@@ -218,12 +231,13 @@ aside {
     display: flex;
     flex-flow: row;
     padding: 5px;
-    height: 150px;
+    height: 140px;
     width: 350px;
     margin: auto;
     margin-bottom: 20px;
 }
 .populaires img {
+    object-fit: cover;
     width: 40%;
     height: 100%;
     border-top-left-radius: 20px;
@@ -231,6 +245,9 @@ aside {
     margin-right: 20px;
 }
 .populaires figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #FFFFFF;
     color: #000000;
     text-align: left;
@@ -238,10 +255,17 @@ aside {
     line-height: 100%;
     margin-right: 40px;
 }
+#icaption_b {
+    padding-bottom: 10px;
+}
+
+.activités img {
+    object-fit: cover;    
+}
 #amarseille {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2%;
+    grid-gap: 3%;
     grid-auto-rows: 440px; /* donne la hauteur des colonnes */
     margin-bottom: 60px;
 }
@@ -277,7 +301,7 @@ aside {
     height: 235px;
     overflow : hidden;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .act_pomègues img {
     height: calc(100% - 60px);
@@ -291,7 +315,7 @@ aside {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
-    height: 175px;
+    height: 165px;
     overflow: hidden;
     margin: auto;
 }
@@ -305,10 +329,10 @@ aside {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
-    height: 175px;
+    height: 165px;
     overflow: hidden;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
 }
 .act_ndgarde img {
