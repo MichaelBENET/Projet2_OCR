@@ -149,7 +149,18 @@ nav a:focus {
 .fas_v {
     color: #dbdbdb;
 }
-
+.hp img {
+    object-fit: cover;    
+}
+.hp h3 {
+font-size: 1.3em;
+}
+.hp p {
+    font-size: 1.1em;
+}
+.hp {
+    margin-bottom: 80px;
+}
 .hébergements {
     display: flex;
     flex-flow: column; /* blocs h2, hmarseille, h2 */
@@ -159,9 +170,7 @@ nav a:focus {
     padding: 20px; /* marge intérieure */
     margin-right: 40px;
 }
-.hp img {
-    object-fit: cover;    
-}
+
 .hébergements h3 {
     margin-left: 10px;
     margin-bottom: 8px;
@@ -205,6 +214,9 @@ nav a:focus {
     text-align: left;
     font-size: 12px;
     line-height: 100%;
+}
+#prix_gras {
+    font-weight: bold;
 }
 #afficher_plus {
     cursor: pointer;
@@ -261,6 +273,9 @@ aside {
 
 .activités img {
     object-fit: cover;    
+}
+.activités h3 {
+    font-size: 1.3em;
 }
 #amarseille {
     display: grid;
@@ -374,8 +389,20 @@ aside {
 .footer ul {
     list-style-type: none; 
 }
+
 .footer a {
+    color: #760001;
+    padding-bottom: 3px;
     text-decoration: none;
+    border-top: 3px solid #F2F2F2;
+}
+
+.footer a:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+.footer a:focus {
+    color: #0065FC;
 }
 .footer li{
     margin-bottom: 15px;
