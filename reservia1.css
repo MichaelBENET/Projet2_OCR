@@ -5,6 +5,7 @@ body {
     font-family: 'Raleway';
 }
 
+
 header {
     display: flex; 
     justify-content: space-between;
@@ -391,7 +392,7 @@ aside {
 }
 
 .footer a {
-    color: #760001;
+    color: #000000;
     padding-bottom: 3px;
     text-decoration: none;
     border-top: 3px solid #F2F2F2;
@@ -407,3 +408,41 @@ aside {
 .footer li{
     margin-bottom: 15px;
 }
+
+
+/* POUR LES MOBILES */
+/* Smartphones: plutôt que max-width, utiliser max-device-width (largeur périph) */
+@media all and (max-width: 480px)
+{
+    main {
+        width: auto;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+    nav {
+        width: auto;
+    }
+    nav a:hover {
+        border-top: 0;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    nav li {
+        display: table;
+    }
+    .inscrire {
+        display: table-cell;
+        float: right;
+    }
+    #bouton_filtres ul {
+        flex-wrap: wrap;
+    }
+
+ }
+   
+   
+    
+    
+
