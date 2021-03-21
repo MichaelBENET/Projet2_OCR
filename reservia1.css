@@ -10,10 +10,12 @@ header {
     display: flex; 
     justify-content: space-between;
     align-items: flex-end; 
+    margin-top: 30px;
+    margin-bottom: 
 }
 header img {
-    width: 110px; 
-    height: 60px; 
+    width: auto; 
+    height: 50px; 
 }
 nav ul {
     list-style-type: none; 
@@ -26,17 +28,25 @@ nav li {
 
 nav a {
     color: #0065FC;
+    padding-top: 30px;
     padding-bottom: 3px;
     text-decoration: none;
     border-top: 3px solid #FFFFFF;
 }
-
 nav a:hover {
     color: #760001;
     border-top: 3px solid #0065FC;
 }
 nav a:focus {
     color: #760001;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+.precherche {
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 #frm_rch {
     position: relative;
@@ -47,13 +57,21 @@ nav a:focus {
     text-align: center;
     background-color: #F2F2F2;
     padding: 10px;
-    width: 30px;
+    width: 2em; /* 30px au départ */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-#frm_rch input {
+/* TEST infructueux pour changer la couleur de Marseille, France */
+/* input::placeholder {
+        color: black;
+    } */
+ #nom {
+    font-family: 'Raleway';
+    color: black;
     font-size: 15px;
-}
+    font-weight: bold;
+} 
+
 .bouton_recherche {
     border: 0;
     line-height: 2.5;
@@ -81,19 +99,41 @@ nav a:focus {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
-
-#bouton_filtres {
+.loupe_recherche {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0065FC;
+    background-image: linear-gradient(to top right,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    display: none;
 }
+
+
 #bouton_filtres ul { 
     list-style-type: none;
     display: flex;
     padding: 0;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 #bouton_filtres li {
     display: flex;
     justify-content: center;
     height: 40px;
     margin-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 #gras {
     display: flex;
@@ -127,6 +167,10 @@ nav a:focus {
     width: 36px;
     margin-right: 10px;
 }
+
+.info {
+    margin-bottom: 30px;
+}
 .icinfo {
     text-align: center;
     color: #0065FC;
@@ -151,7 +195,7 @@ nav a:focus {
     color: #dbdbdb;
 }
 .hp img {
-    object-fit: cover;    
+    object-fit: cover; /* affiche un aperçu de l'image */
 }
 .hp h3 {
 font-size: 1.3em;
@@ -247,7 +291,7 @@ aside {
     height: 140px;
     width: 350px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* vérifier s'il n'est pas annulé par l'auto du dessus */
 }
 .populaires img {
     object-fit: cover;
@@ -292,7 +336,7 @@ aside {
     text-decoration: none;
 }
 
-.act_un_trois {
+.act_port {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
@@ -300,7 +344,7 @@ aside {
     overflow : hidden;
     margin: auto;
 }
-.act_un_trois img {
+.act_port img {
     height: calc(100% - 60px);
     width: 100%;
     display: flex;
@@ -308,7 +352,21 @@ aside {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
 }
-#colonne_deux {
+.act_calanques {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 440px;
+    overflow : hidden;
+    margin: auto;
+}
+.act_calanques img {
+    height: calc(100% - 60px);
+    width: 100%;
+    display: flex;
+    align-self: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
 }
 .act_pomègues {
     border-radius: 20px;
@@ -400,7 +458,7 @@ aside {
 
 .footer a:hover {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-bottom: 1px solid #0065FC;
 }
 .footer a:focus {
     color: #0065FC;
@@ -412,32 +470,168 @@ aside {
 
 /* POUR LES MOBILES */
 /* Smartphones: plutôt que max-width, utiliser max-device-width (largeur périph) */
-@media all and (max-width: 480px)
-{
-    main {
-        width: auto;
+@media all and (max-width: 640px) {
+    /* "*" selectionne tous les éléments, afin de passer outre les mrges de certains navigateurs : */
+    * {
+        box-sizing: border-box;
     }
+    body {
+        margin: 0; /* cela permet de mieux maîtriser les largeurs des éléments */
+    }
+    
 
     header {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    nav {
-        width: auto;
-    }
-    nav a:hover {
-        border-top: 0;
-        border-bottom: 3px solid #0065FC;
+    header img {
+        position: relative;
+        margin-left: 20px;
     }
 
-    nav li {
-        display: table;
+    main {
+        width: auto;
+        padding: 0;
+    }
+    main h1 {
+        font-size: 1.3em;
+        padding-right: 30px;
+        margin-bottom: 10px;
+    }
+    main h2 {
+        font-size: 1.3em;
     }
     .inscrire {
-        display: table-cell;
-        float: right;
+        font-weight: bold;
+        position: absolute;
+        top: 3em;
+        right: 1.5em;
+    }
+
+    #frm_rch {
+        flex-shrink: 2;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+    nav ul {
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    nav li {
+        margin-right: 0;
+        flex-basis: 50%; /* défini la taille du bloc */
+        text-align: center;
+    }
+    .nav_ha1 {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 15px;
+    }
+    .nav_ha2 {
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .nav_ha2 a{
+                color: #000000;
+    }
+
+    .recherche {
+        margin: 1em;
+    }
+    .precherche {
+        margin-bottom: 30px;
+    }
+
+    #frm_rch {
+        justify-content: center;
+    }
+    #imap {
+        width: 3em;
+    }
+    .bouton_recherche {
+        display: none;
+    }
+    .loupe_recherche {
+        display: unset;
+    }
+    .loupe_recherche:hover {
+    background-color: #DEEBFF;
+    }
+    .loupe_recherche:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+
+    #gras {
+        margin-right: 200px;
     }
     #bouton_filtres ul {
         flex-wrap: wrap;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+    .icinfo {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border: #E6E6E6 solid 1px;
+
+
+    }
+    .hp {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hp h3 {
+        font-size: 1em; /* Agit sur taille "afficher plus" */
+    }
+    .hp figcaption h3 {
+        font-size: 1.2em; /* Agit sur les noms héb. et pop. */
+    }
+    .hébergements {
+        width: 100%;
+        background-color: white;
+
+    }
+    #hmarseille figure {
+        width: 335px;
+    }
+    aside {
+        width: 100%;
+        
+    }
+    aside figure {
+        max-width: 100%;
+    }
+
+    #amarseille {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+                            repeat(4, auto);
+    }
+    #amarseille figure {
+        height: 170px;
+    }
+    .act_pomègues {
+    }
+    .act_ndgarde {
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
  }

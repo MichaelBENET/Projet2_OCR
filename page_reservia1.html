@@ -2,28 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/bdb6bd2b94.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="reservia1.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
         <title>Reservia</title>
-    </head>
-    
+    </head>   
     <body>
-        <main role=main>
             <header>
                 <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
                 <nav>
                     <ul>
-                        <li><a href="#hébergements">Hébergements</a></li>
-                        <li><a href="#activités">Activités</a></li>
-                        <li><a href="#" class="inscrire">S'inscrire</a></li>
+                        <li class="nav_ha1"><a href="#hébergements">Hébergements</a></li>
+                        <li class="nav_ha2"><a href="#activités">Activités</a></li>
+                        <li class="inscrire"><a href="#" >S'inscrire</a></li>
                     </ul>
                 </nav>
-             </header> 
+             </header>
+        <main role=main>
              <section class="recherche">
                  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
+                    <p class="precherche">En plein centre ville ou en pleine nature</p>
                         <form id="frm_rch">
                             <div id="imap">
                                 <i class="fas fa-map-marker-alt fa-lg"></i>
@@ -31,6 +31,7 @@
                             <input id="nom" type="text" placeholder="Marseille, France" autofocus required />
                             <div id="btn_rch">
                                 <button class="bouton_recherche" type="button"> Rechercher </button>
+                                <button class="loupe_recherche" type="button"> <i class="fas fa-search"></i> </button>
                             </div>
                         </form>
                     <div id="bouton_filtres">
@@ -157,7 +158,7 @@
                 <div id="amarseille">
                     <div id="colonne_un">
                         <a href="#">
-                            <figure class="act_un_trois">
+                            <figure class="act_port">
                                 <img src="images/activites/4_small/reno-laithienne-qugjhdy5fyk-unsplash.jpg" alt="Vieux Port"/>
                                 <figcaption><h3>Vieux Port</h3></figcaption>
                             </figure>
@@ -179,7 +180,7 @@
                     </div>
                     <div id="colonne_trois">
                         <a href="#">
-                            <figure class="act_un_trois">
+                            <figure class="act_calanques">
                                 <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
                                 <figcaption><h3>Parc National des Calanque</h3></figcaption>
                             </figure>
@@ -201,6 +202,7 @@
                     </div>
                 </div>
             </section>
+        </main>
             <footer class="footer">
                 <div id="fpropos">
                     <ul><li><h3>À propos</h3></li>
@@ -224,6 +226,5 @@
                     </ul>
                 </div>
             </footer>
-        </main>
     </body>
 </html>
