@@ -619,11 +619,14 @@ aside {
     #amarseille {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 
-                            repeat(4, auto);
+        grid-template-rows: repeat(4, auto);
     }
     #amarseille figure {
         height: 170px;
+    }
+    #amarseille {
+        height: 1200px;
+        margin-bottom: 60px;
     }
     .act_pomègues {
     }
@@ -632,6 +635,11 @@ aside {
     .footer {
         display: grid;
         grid-template-columns: 1fr;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .footer li{
+        margin-bottom: 10px;
     }
 
  }
