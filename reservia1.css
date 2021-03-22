@@ -4,7 +4,10 @@
 body {
     font-family: 'Raleway';
 }
-
+main {
+    max-width: 1400px;
+    margin: auto;
+}
 
 header {
     display: flex; 
@@ -62,9 +65,10 @@ h1 {
     border-bottom-left-radius: 20px;
 }
 /* TEST infructueux pour changer la couleur de Marseille, France */
-/* input::placeholder {
+/* ::placeholder, ::-webkit-input-placeholder, :-ms-input-placeholder, */
+::-moz-placeholder {
         color: black;
-    } */
+    } 
  #nom {
     font-family: 'Raleway';
     color: black;
@@ -598,7 +602,7 @@ aside {
         font-size: 1em; /* Agit sur taille "afficher plus" */
     }
     .hp figcaption h3 {
-        font-size: 1.2em; /* Agit sur les noms héb. et pop. */
+        font-size: 1.25em; /* Agit sur les noms héb. et pop. */
     }
     .hébergements {
         width: 100%;
@@ -617,21 +621,14 @@ aside {
     }
 
     #amarseille {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-    }
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+   }
     #amarseille figure {
         height: 170px;
     }
-    #amarseille {
-        height: 1200px;
-        margin-bottom: 60px;
-    }
-    .act_pomègues {
-    }
-    .act_ndgarde {
-    }
+
     .footer {
         display: grid;
         grid-template-columns: 1fr;
