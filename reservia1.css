@@ -620,13 +620,19 @@ aside {
         max-width: 100%;
     }
 
+    .activités h2 {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
     #amarseille {
         display: flex;
         flex-direction: column;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
    }
     #amarseille figure {
         height: 170px;
+        width: 90%;
+        margin-bottom: 25px;
     }
 
     .footer {
