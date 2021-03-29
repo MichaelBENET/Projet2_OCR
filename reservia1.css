@@ -3,10 +3,11 @@
 }
 body {
     font-family: 'Raleway';
+    margin: 0;
 }
 main {
     max-width: 1400px;
-    margin: auto;
+    margin: 30px;
 }
 
 header {
@@ -14,9 +15,10 @@ header {
     justify-content: space-between;
     align-items: flex-end; 
     margin-top: 30px;
-    margin-bottom: 
+    
 }
 header img {
+    padding-left: 30px;
     width: auto; 
     height: 50px; 
 }
@@ -620,13 +622,19 @@ aside {
         max-width: 100%;
     }
 
+    .activités h2 {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
     #amarseille {
         display: flex;
         flex-direction: column;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
    }
     #amarseille figure {
         height: 170px;
+        width: 90%;
+        margin-bottom: 25px;
     }
 
     .footer {
@@ -638,8 +646,22 @@ aside {
     .footer li{
         margin-bottom: 10px;
     }
-
+/* @media (max-device-width:768px) and (orientation: landscape) {
+  html {
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+  }
+}
+*/
  }
+@media screen and (min-width: 200px) and (max-width: 1024px) 
+{
+    main {
+        width: auto;
+        padding: 0;
+
+    }
+}
    
    
     
