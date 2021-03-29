@@ -302,8 +302,14 @@ aside {
     margin-bottom: 20px; /* vérifier s'il n'est pas annulé par l'auto du dessus */
 }
 .populaires img {
-    object-fit: cover;
     width: 40%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    margin-right: 20px;
+}
+.h_bleublanc img {
+    width: 48%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px; 
@@ -334,7 +340,7 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 3%;
-    grid-auto-rows: 440px; /* donne la hauteur des colonnes */
+    grid-auto-rows: 440px; /* donne la hauteur de la ligne (donc de mes colonnes) */
     margin-bottom: 60px;
 }
 #amarseille figure {
@@ -654,13 +660,40 @@ aside {
     }
 
  }
-/*@media screen and (min-width: 640px) and (max-width: 1024px) 
-{
-     main {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+
+    * {
+        box-sizing: border-box;
+    }
+    main {
         width: auto;
         padding: 0;
+        margin: 20px;
+    }
 
-    } */
+    #bouton_filtres ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #hp {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .hébergements {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+    aside {
+        width: 100%;
+        
+    }
+    aside figure {
+        max-width: 100%;
+    }
 }
    
    
