@@ -187,11 +187,11 @@ h1 {
     margin-right: 10px;
 }
 
-.hp {
+#hp {
     display: flex;
     flex-flow: row;
 }
-.hp a {
+#hp a {
     text-decoration: none;
 }
 .fas_p{
@@ -200,16 +200,16 @@ h1 {
 .fas_v {
     color: #dbdbdb;
 }
-.hp img {
+#hp img {
     object-fit: cover; /* affiche un aperçu de l'image */
 }
-.hp h3 {
+#hp h3 {
 font-size: 1.3em;
 }
-.hp p {
+#hp p {
     font-size: 1.1em;
 }
-.hp {
+#hp {
     margin-bottom: 80px;
 }
 .hébergements {
@@ -231,7 +231,7 @@ font-size: 1.3em;
     margin-top: 8px;
     margin-bottom: 8px;
 }
-#icaption {
+.icaption {
     padding-left: 10px;
 }
 #hmarseille {
@@ -266,10 +266,12 @@ font-size: 1.3em;
     font-size: 12px;
     line-height: 100%;
 }
-#prix_gras {
+.prix_gras {
     font-weight: bold;
 }
 #afficher_plus {
+    margin-top: 20px;
+    font-weight: bold;
     cursor: pointer;
 }
 aside {
@@ -318,7 +320,7 @@ aside {
     line-height: 100%;
     margin-right: 40px;
 }
-#icaption_b {
+.icaption_b {
     padding-bottom: 10px;
 }
 
@@ -593,7 +595,7 @@ aside {
 
 
     }
-    .hp {
+    #hp {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column-reverse;
@@ -601,10 +603,10 @@ aside {
         margin-bottom: 20px;
     }
 
-    .hp h3 {
+    #hp h3 {
         font-size: 1em; /* Agit sur taille "afficher plus" */
     }
-    .hp figcaption h3 {
+    #hp figcaption h3 {
         font-size: 1.25em; /* Agit sur les noms héb. et pop. */
     }
     .hébergements {
@@ -622,9 +624,12 @@ aside {
     aside figure {
         max-width: 100%;
     }
+    #afficher_plus {
+        margin-top: 0px;
+    }
 
     .activités h2 {
-        margin-left: 30px;
+        margin-left: 20px;
         margin-bottom: 30px;
     }
     #amarseille {
