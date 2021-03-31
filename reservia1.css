@@ -13,15 +13,17 @@ main {
 header {
     display: flex; 
     justify-content: space-between;
-    align-items: flex-end; 
+    align-items: flex-end; /* place à droit */
     margin-top: 30px;
     
 }
+/* LOGO */
 header img {
     padding-left: 30px;
     width: auto; 
     height: 50px; 
 }
+/* MENU */
 nav ul {
     list-style-type: none; 
     display: flex;
@@ -46,6 +48,7 @@ nav a:focus {
     color: #760001;
 }
 
+/* Section recherche */
 h1 {
     margin-bottom: 5px;
 }
@@ -187,6 +190,7 @@ h1 {
     margin-right: 10px;
 }
 
+/* section hébergements/populaires */
 #hp {
     display: flex;
     flex-flow: row;
@@ -218,7 +222,7 @@ font-size: 1.3em;
     width: 65%;
     background-color: #F2F2F2;
     border-radius: 20px; /* arrondis */
-    padding: 20px; /* marge intérieure */
+    padding: 18px; /* marge intérieure */
     margin-right: 30px;
 }
 
@@ -240,6 +244,9 @@ font-size: 1.3em;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#hmarseille a {
+    margin-bottom: 18px;
+}
 #hmarseille figure {
     background-color: #FFFFFF;
     box-shadow: 1px 1px 15px #E3E3E3;
@@ -250,7 +257,6 @@ font-size: 1.3em;
     height: 190px;
     width: 230px;
     margin: auto;
-    margin-bottom: 25px;
 }
 #hmarseille img {
     width: 100%;
@@ -274,6 +280,8 @@ font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
 }
+
+/* Section POPULAIRES */
 aside {
     width: 400px; 
     background-color: #F2F2F2;
