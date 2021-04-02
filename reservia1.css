@@ -6,7 +6,8 @@ body {
     margin: 0;
 }
 main {
-    max-width: 1400px;
+    max-width: 1800px;
+    width: auto;
     margin: 30px;
 }
 
@@ -14,7 +15,7 @@ header {
     display: flex; 
     justify-content: space-between;
     align-items: flex-end; /* place à droit */
-    margin-top: 30px;
+    margin-top: 20px;
     
 }
 /* LOGO */
@@ -27,25 +28,29 @@ header img {
 nav ul {
     list-style-type: none; 
     display: flex;
+    margin-right: 20px;
 }
 
 nav li {
-    margin-right: 60px; 
+    margin-right: 10px; 
 }
 
 nav a {
-    color: #0065FC;
+    color: #000000;
     padding-top: 30px;
     padding-bottom: 3px;
     text-decoration: none;
     border-top: 3px solid #FFFFFF;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 nav a:hover {
-    color: #760001;
+    color: #0065FC;
     border-top: 3px solid #0065FC;
 }
 nav a:focus {
-    color: #760001;
+    color: #0065FC;
+    font-weight: bold;
 }
 
 /* Section recherche */
@@ -60,6 +65,9 @@ h1 {
     position: relative;
     display: flex;
     border-collapse: separate;
+    /* détermine si les bordures d'un tableau sont séparées ou fusionnées. 
+    Quand elles sont séparées, chaque cellule du tableau a ses propres 
+    bordures, distinctes. Quand elles sont fusionnées, les bordures des cellules sont partagées. */
 }
 #imap {
     text-align: center;
@@ -74,12 +82,20 @@ h1 {
 ::-moz-placeholder {
         color: black;
 } */
- #nom {
+#in_nom_rch {
+    border: #E6E6E6 solid 1px;
+}
+#nom {
     font-family: 'Raleway';
     color: black;
     font-size: 15px;
     font-weight: bold;
+    padding: 0 0 0 2px;
+    border: 0px;
+    line-height: 48px;
 } 
+
+
 
 .bouton_recherche {
     border: 0;
@@ -88,16 +104,9 @@ h1 {
     font-size: 20px;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #0065FC;
-    background-image: linear-gradient(to top right,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .bouton_recherche:hover {
@@ -115,16 +124,9 @@ h1 {
     font-size: 20px;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #0065FC;
-    background-image: linear-gradient(to top right,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
     display: none;
 }
 
@@ -216,7 +218,7 @@ font-size: 1.3em;
 #hp {
     margin-bottom: 80px;
 }
-.hébergements {
+.hebergements {
     display: flex;
     flex-flow: column; /* blocs h2, hmarseille, h2 */
     width: 65%;
@@ -226,11 +228,11 @@ font-size: 1.3em;
     margin-right: 30px;
 }
 
-.hébergements h3 {
+.hebergements h3 {
     margin-left: 10px;
     margin-bottom: 8px;
 }
-.hébergements p {
+.hebergements p {
     margin-left: 10px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -338,10 +340,10 @@ aside {
     padding-bottom: 10px;
 }
 
-.activités img {
+.activites img {
     object-fit: cover;    
 }
-.activités h3 {
+.activites h3 {
     font-size: 1.3em;
 }
 #amarseille {
@@ -358,7 +360,7 @@ aside {
     text-decoration: none;
 }
 
-.act_port {
+.act_port_calanques {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
@@ -366,7 +368,7 @@ aside {
     overflow : hidden;
     margin: auto;
 }
-.act_port img {
+.act_port_calanques img {
     height: calc(100% - 60px);
     width: 100%;
     display: flex;
@@ -374,70 +376,8 @@ aside {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
 }
-.act_calanques {
-    border-radius: 20px;
-    display: flex;
-    flex-flow: column;
-    height: 440px;
-    overflow : hidden;
-    margin: auto;
-}
-.act_calanques img {
-    height: calc(100% - 60px);
-    width: 100%;
-    display: flex;
-    align-self: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
-}
-.act_pomègues {
-    border-radius: 20px;
-    display: flex;
-    flex-flow: column;
-    height: 235px;
-    overflow : hidden;
-    margin: auto;
-    margin-bottom: 40px;
-}
-.act_pomègues img {
-    height: calc(100% - 60px);
-    width: 100%;
-    display: flex;
-    align-self: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.act_frioul {
-    border-radius: 20px;
-    display: flex;
-    flex-flow: column;
-    height: 165px;
-    overflow: hidden;
-    margin: auto;
-}
-.act_frioul img {
-    height: calc(100% - 60px);
-    width: 100%;   
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.act_ndgarde {
-    border-radius: 20px;
-    display: flex;
-    flex-flow: column;
-    height: 165px;
-    overflow: hidden;
-    margin: auto;
-    margin-bottom: 40px;
 
-}
-.act_ndgarde img {
-    height: calc(100% - 60px);
-    width: 100%;   
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
-}
-.act_parc {
+.act_pomegues_parc {
     border-radius: 20px;
     display: flex;
     flex-flow: column;
@@ -445,13 +385,37 @@ aside {
     overflow: hidden;
     margin: auto;
 }
-.act_parc img {
+.act_pomegues_parc img {
     height: calc(100% - 60px);
     width: 100%;
+    display: flex;
+    align-self: center;
     border-top-left-radius: 20px;
-    border-top-right-radius:20px; 
+    border-top-right-radius: 20px;
 }
-.activités figcaption {
+#act_pomegues {
+    margin-bottom: 40px;
+}
+.act_frioul_ndgarde {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 165px;
+    overflow: hidden;
+    margin: auto;
+}
+.act_frioul_ndgarde img {
+    height: calc(100% - 60px);
+    width: 100%;   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#act_ndgarde {   
+    margin-bottom: 40px;
+}
+
+
+.activites figcaption {
     background-color: #FFFFFF;
     color: #000000;
     height: 60px;
@@ -489,7 +453,12 @@ aside {
     margin-bottom: 15px;
 }
 
-
+/* POUR LES ECRANS PLUS GRAND */
+@media all and (min-width: 1801px) {
+    main {
+        margin: auto;
+    }
+}
 /* POUR LES MOBILES */
 /* Smartphones: plutôt que max-width, utiliser max-device-width (largeur périph) */
 @media all and (max-width: 640px) {
@@ -623,7 +592,7 @@ aside {
     #hp figcaption h3 {
         font-size: 1.25em; /* Agit sur les noms héb. et pop. */
     }
-    .hébergements {
+    .hebergements {
         width: 100%;
         background-color: white;
 
@@ -633,6 +602,7 @@ aside {
     }
     aside {
         width: 100%;
+        border-radius: 0px;
         
     }
     aside figure {
@@ -642,7 +612,7 @@ aside {
         margin-top: 0px;
     }
 
-    .activités h2 {
+    .activites h2 {
         margin-left: 20px;
         margin-bottom: 30px;
     }
@@ -690,7 +660,7 @@ aside {
         height: 100%;
         margin-bottom: 20px;
     }
-    .hébergements {
+    .hebergements {
         width: 100%;
         margin-bottom: 20px;
 

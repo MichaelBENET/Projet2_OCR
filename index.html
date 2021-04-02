@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +14,22 @@
             <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
             <nav>
                 <ul>
-                    <li class="nav_ha1"><a href="#hébergements">Hébergements</a></li>
-                    <li class="nav_ha2"><a href="#activités">Activités</a></li>
+                    <li class="nav_ha1"><a href="#hebergements">Hébergements</a></li>
+                    <li class="nav_ha2"><a href="#activites">Activités</a></li>
                     <li class="inscrire"><a href="#" >S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
-        <main role=main>
+        <main>
             <section class="recherche">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="precherche">En plein centre ville ou en pleine nature</p>
                 <form id="frm_rch">
                     <div id="imap">
                         <i class="fas fa-map-marker-alt fa-lg"></i>
-                     </div>
-                    <input id="nom" type="text" placeholder="Marseille, France" autofocus required />
-                     <div id="btn_rch">
+                    </div>
+                    <div id="in_nom_rch"><input id="nom" type="text" placeholder="Marseille, France" autofocus /></div>
+                    <div id="btn_rch">
                         <button class="bouton_recherche" type="button"> Rechercher </button>
                         <button class="loupe_recherche" type="button"> <i class="fas fa-search"></i> </button>
                     </div>
@@ -46,7 +46,7 @@
                 <p class="info"><i class="fas fa-info icinfo"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             </section>            
             <div id="hp">
-                <section class="hébergements" id="hébergements">
+                <section class="hebergements" id="hebergements">
                     <h2>Hébergements à Marseille</h2><br>
                     <div id=hmarseille>
                         <a href="#">
@@ -152,12 +152,12 @@
                     </a>
                 </aside>
             </div>
-            <section class="activités" id="activités">
+            <section class="activites" id="activites">
                 <h2>Activités à Marseille</h2>
                 <div id="amarseille">
                     <div id="colonne_un">
                         <a href="#">
-                            <figure class="act_port">
+                            <figure class="act_port_calanques">
                                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
                                 <figcaption><h3>Vieux Port</h3></figcaption>
                             </figure>
@@ -165,13 +165,13 @@
                     </div>
                     <div id="colonne_deux">
                         <a href="#">
-                            <figure class="act_pomègues">
+                            <figure class="act_pomegues_parc" id="act_pomegues">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
                                 <figcaption><h3>Fort de Pomègues</h3></figcaption>
                             </figure>
                         </a>
                         <a href="#">
-                            <figure class="act_frioul">
+                            <figure class="act_frioul_ndgarde">
                                 <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"/>
                                 <figcaption><h3>Îles du Frioul</h3></figcaption>
                             </figure>
@@ -179,7 +179,7 @@
                     </div>
                     <div id="colonne_trois">
                         <a href="#">
-                            <figure class="act_calanques">
+                            <figure class="act_port_calanques">
                                 <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
                                 <figcaption><h3>Parc National des Calanque</h3></figcaption>
                             </figure>
@@ -187,13 +187,13 @@
                     </div>
                     <div id="colonne_quatre">
                         <a href="#">
-                            <figure class="act_ndgarde">
+                            <figure class="act_frioul_ndgarde" id="act_ndgarde">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Vieux Port"/>
                                 <figcaption><h3>Notre-Dame-de-la-Garde</h3></figcaption>
                             </figure>
                         </a>
                         <a href="#">
-                            <figure class="act_parc">
+                            <figure class="act_pomegues_parc">
                                 <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
                                 <figcaption><h3>Parc Longchamp</h3></figcaption>
                             </figure>
@@ -210,7 +210,7 @@
                     <li><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
-            <div id="fhébergements">
+            <div id="fhebergements">
                 <ul>
                     <li><h3>Nos hébergements</h3></li>
                     <li><a href="#">Charte qualité</a></li>
